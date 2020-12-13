@@ -1,0 +1,363 @@
+/*GLOBAL*/
+$color-gold:#f1c40f;
+$color-dark:#2c3e50;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+/*SPLASH*/
+.splash {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1036841/pexels-photo-1036841.jpeg?cs=srgb&dl=pexels-dominika-roseclay-1036841.jpg&fm=jpg");
+    background-size: cover;
+    min-height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    color: white;
+}
+
+.splash nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+
+}
+
+.greetings {
+    flex: 4;
+    margin-top: 100px;
+}
+
+.container .wrapper {
+
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+
+nav ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav p {
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+    color: $color-gold;
+    font-family: Yellowtail, snans-serif;
+}
+
+.splash li {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.splash a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.splash a {
+    text-decoration: none;
+    font-family: Roboto, snans-serif;
+}
+
+.splash a:hover {
+    color: $color-gold;
+}
+
+
+.greetings p {
+    font-size: 2rem;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.greetings h2 {
+    margin: 10px auto;
+    font-size: 3rem;
+    padding: 10px 20px;
+}
+
+.greetings button {
+    padding: 10px 30px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: $color-dark;
+    font-family: Roboto, sans-serif;
+    font-weight: 50;
+    background-color: $color-gold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+/*Services*/
+.services {
+    min-height: 100%;
+}
+
+.services .container-2 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-2 .title {
+    flex-grow: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: $color-dark;
+}
+
+
+.title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.title p {
+    width: 100%;
+    line-height: 200%;
+}
+
+.container-2 .boxes {
+    width: 100%;
+    height: 100%;
+    flex-grow: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.services .box {
+    flex: 1;
+    height: 300px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 0;
+    color: $color-dark;
+    font-family: Roboto, sans-serif;
+}
+
+.box i {
+    font-size: 2rem;
+    position: absolute;
+    color: $color-gold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box div {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid $color-gold;
+    border-radius: 50%;
+}
+
+/*Portfolio*/
+.portfolio {
+    min-height: 100%;
+    background-color: lightgray;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container-3 .title-2 {
+    flex: 2;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: $color-dark;
+}
+
+.container-3 .gallery {
+    flex: 5;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-dark;
+}
+
+.gallery-box {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.img {
+    height: 250px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*FOOTER*/
+footer {
+    height: 70px;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.wrapper ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.wrapper li {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+}
+
+.wrapper p {
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.wrapper a {
+    font-size: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.wrapper i {
+    font-size: 1.5rem;
+    color: $color-gold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*QUERIES*/
+
+@media (orientation:landscape) {
+    .gallery-box {
+        width: 60%;
+    }
+}
+
+@media(min-width:560px) {
+    .splash {
+        height: 100%;
+    }
+
+    .services {
+        height: 100%;
+    }
+
+    .greetings {
+        flex: 5;
+        margin-top: 0;
+    }
+
+    .container-2 .boxes {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .boxes .box {
+        margin: 10px 20px;
+    }
+
+    .container-3 .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery-box {
+        margin: 0 20px;
+        flex: 25%
+    }
+
+    footer .wrapper {
+        flex-direction: row;
+        ;
+    }
+
+    footer p {
+        flex: 2;
+    }
+
+    footer ul {
+        flex: 3;
+    }
+
+}
+
+@media(orientation:landscape) {
+    .greetings {
+        height: 100%;
+    }
+}
