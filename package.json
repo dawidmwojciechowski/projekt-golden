@@ -2,7 +2,7 @@
   "name": "taskrunner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
@@ -24,20 +24,15 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^10.2.4",
     "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.26.3",
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.11.0",
-    "npm-run-all": "^4.1.5",
+    "browser-sync": "^2.26.13",
     "html-validate": "^2.8.0",
-    "onchange": "^5.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dawidmwojciechowski/projekt-golden.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dawidmwojciechowski/projekt-golden/issues"
-  },
-  "homepage": "https://github.com/dawidmwojciechowski/projekt-golden#readme"
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1"
+  }
 }
