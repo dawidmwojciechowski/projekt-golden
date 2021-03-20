@@ -206,3 +206,26 @@ text-align: center;
 
 
 /*Media*/
+
+@media (max-width: 767px) {
+  
+  .copyright {
+    line-height: 20px;
+    margin: 40px;
+  }
+
+  .text {
+    display: flex;
+  }
+
+  .foot {
+    display: flex;
+    float: left;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .footer {
+    display: flex;
+  }  
+}

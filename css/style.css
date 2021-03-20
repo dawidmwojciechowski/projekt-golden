@@ -202,4 +202,26 @@ p {
 }
 
 /*Media*/
+@media (max-width: 767px) {
+  .copyright {
+    line-height: 20px;
+    margin: 40px;
+  }
+  .text {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .foot {
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer {
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*# sourceMappingURL=style.css.map */
